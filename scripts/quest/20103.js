@@ -25,7 +25,7 @@ function end(mode, type, selection) {
 	    qm.gainItem(1452051, 1);
 	    qm.gainItem(1142066, 1);
 	    qm.changeJob(MapleJob.WINDARCHER1);
-	    qm.getPlayer().resetStats();
+	    qm.resetStats();
 	}
 	qm.forceCompleteQuest();
     } else if (status == 2) {

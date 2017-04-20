@@ -26,7 +26,7 @@ function end(mode, type, selection) {
 	    qm.gainItem(2070015, 800);
 	    qm.gainItem(1142066, 1);
 	    qm.changeJob(MapleJob.NIGHTWALKER1);
-	    qm.getPlayer().resetStats();
+	    qm.resetStats();
 	}
 	qm.forceCompleteQuest();
     } else if (status == 2) {

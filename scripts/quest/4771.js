@@ -17,7 +17,7 @@ function start(mode, type, selection) {
 			qm.sendNext("恭喜你当前等级已经到达#b72#k级。");
 			}
 		} else if (status == 1) { //奖励爱心情景喇叭
-		  if(qm.canHold(5390002){								
+		  if(qm.canHold(5390002)){								
 			qm.sendOk("恭喜你获得系统奖励！\r\n\r\n#fUI/UIWindow.img/QuestIcon/4/0#\r\n#v5390002# x 1个");
 			qm.gainItem(5390002, 1);
 			qm.forceCompleteQuest(4771);

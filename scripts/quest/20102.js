@@ -25,7 +25,7 @@ function end(mode, type, selection) {
 	    qm.gainItem(1372043, 1);
 	    qm.gainItem(1142066, 1);
 	    qm.changeJob(MapleJob.BLAZEWIZARD1);
-	    qm.getPlayer().resetStats();
+	    qm.resetStats();
 	}
 	qm.forceCompleteQuest();
     } else if (status == 2) {

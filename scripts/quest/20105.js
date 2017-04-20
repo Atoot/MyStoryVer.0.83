@@ -24,8 +24,8 @@ function end(mode, type, selection) {
 	if (qm.getJobId() != 1500) {
 	    qm.gainItem(1482014, 1);
 	    qm.gainItem(1142066, 1);
-	    qm.getplayer().changeJob(MapleJob.THUNDERBREAKER1);
-	    qm.getPlayer().resetStats();
+	    qm.changeJob(MapleJob.THUNDERBREAKER1);
+	    qm.resetStats();
 	}
 	qm.forceCompleteQuest();
     } else if (status == 2) {
