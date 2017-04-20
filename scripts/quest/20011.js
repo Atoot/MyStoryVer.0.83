@@ -17,7 +17,7 @@ function start(mode, type, selection) {
 	status--;
     }
     if (status == 0) {
-    	qm.sendNext("There are a number of ways to hunt, but the most basic way is with your #bRegular Attack#k. All you need is a weapon in your hand, since it's a simple matter of just swinging your weapon at monsters.");
+    	qm.sendNext("ÄÚÅ£ÊÇÉ·±Ê of ways to hunt, but the most basic way is with your #bRegular Attack#k. All you need is a weapon in your hand, since it's a simple matter of just swinging your weapon at monsters.");
     } else if (status == 1) {
     	qm.sendNextPrev("Press the #bC#k to use your Regular Attack. Usually the C is located #bat the bottom left of the keyboard#k, but you don't need me to tell you that, right? Find the C and try it out!");
     } else if (status == 2) {

@@ -10,7 +10,8 @@ var job;
 var koc = new Array();
 
 function start() {
-   cm.sendNext("Hey #e#h ##n, I'm the Aran & Cygnus Job Advancer.");
+   cm.sendOk("你好 #e#h ##n, 我只是个垃圾.");
+   cm.dispose();
 }
 
 function action(m, t, s) {

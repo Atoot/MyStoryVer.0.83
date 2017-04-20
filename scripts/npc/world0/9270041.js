@@ -2,7 +2,7 @@ status = -1;
 oldSelection = -1;
 
 function start() {
-    cm.sendSimple("Hello, I am Irene from Singapore Airport. I can assist you in getting you to Singapore in no time. Do you want to go to Singapore?\r\n#b#L0#I would like to buy a plane ticket to Singapore\r\n#b#L1#Let me go in to the departure point.");
+    cm.sendSimple("你好我是空姐，你想去新加坡吗?\r\n#b#L0#买票\r\n#b#L1#出发.");
 }
 
 function action(mode, type, selection) {
@@ -14,9 +14,9 @@ function action(mode, type, selection) {
 	
 	if(status == 0){
 		if(selection == 0){
-			cm.sendYesNo("The ticket will cost you 5,000 mesos. Will you purchase the ticket?");
+			cm.sendYesNo("5000金币一张票，要买吗?");
 		}else if(selection == 1){
-			cm.sendYesNo("Would you like to go in now? You will lose your ticket once you go in! Thank you for choosing Wizet Airline.");
+			cm.sendYesNo("那里很漂亮的，要去吗?");
 		}
 		oldSelection = selection;
 	}else if(status == 1){
@@ -30,10 +30,10 @@ function action(mode, type, selection) {
 					cm.warp(540010100);
 					cm.gainItem(4031731, -1);
 				}else{
-					cm.sendOk("Sorry the plane has taken off please wait a few minutes.");
+					cm.sendOk("对不起，已经起飞了请稍后再来.");
 				}
 			}else{
-				cm.sendOk("You need a #t4031731# to get on the plane!");
+				cm.sendOk("没有 #t4031731# 不能去的!");
 			}
 		}
 		cm.dispose();

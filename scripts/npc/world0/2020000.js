@@ -52,8 +52,8 @@ function action(mode, type, selection) {
     else
         cm.dispose();
     if (status == 0 && mode == 1) {
-        var selStr = "Hm? Who might you be? Oh, you've heard about my forging skills? In that case, I'd be glad to process some of your ores... for a fee.#b"
-        var options = new Array("Refine a mineral ore","Refine a jewel ore","Refine a rare jewel","Refine a crystal ore","Create materials","Create Arrows");
+        var selStr = "草你妈的现在总算汉化了吧.#b"
+        var options = new Array("制作矿石","制作宝石","制作罕见宝石","制作晶石","制作材料","制作弓矢");
         for (var i = 0; i < options.length; i++){
             selStr += "\r\n#L" + i + "# " + options[i] + "#l";
         }
@@ -64,7 +64,7 @@ function action(mode, type, selection) {
         selectedType = selection;
         if (selectedType == 0){ //mineral refine
             var selStr = "So, what kind of mineral ore would you like to refine?#b";
-            var minerals = new Array ("Bronze","Steel","Mithril","Adamantium","Silver","Orihalcon","Gold");
+            var minerals = new Array ("青铜","钢铁","锂矿石","朱矿石","银","紫矿石","黄金");
             for (var i = 0; i < minerals.length; i++){
                 selStr += "\r\n#L" + i + "# " + minerals[i] + "#l";
             }
@@ -73,7 +73,7 @@ function action(mode, type, selection) {
         }
         else if (selectedType == 1){ //jewel refine
             var selStr = "So, what kind of jewel ore would you like to refine?#b";
-            var jewels = new Array ("Garnet","Amethyst","Aquamarine","Emerald","Opal","Sapphire","Topaz","Diamond","Black Crystal");
+            var jewels = new Array ("石榴石","紫水晶","海蓝宝石","祖母绿","蛋白石","蓝宝石","黄晶","钻石","黑水晶");
             for (var i = 0; i < jewels.length; i++){
                 selStr += "\r\n#L" + i + "# " + jewels[i] + "#l";
             }
@@ -82,7 +82,7 @@ function action(mode, type, selection) {
         }
         else if (selectedType == 2){ //rock refine
             var selStr = "A rare jewel? Which one were you thinking of?#b";
-            var items = new Array ("Moon Rock","Star Rock");
+            var items = new Array ("月石","星石");
             for (var i = 0; i < items.length; i++){
                 selStr += "\r\n#L" + i + "# " + items[i] + "#l";
             }
@@ -90,7 +90,7 @@ function action(mode, type, selection) {
         }
         else if (selectedType == 3){ //crystal refine
             var selStr = "Crystal ore? It's hard to find those around here...#b";
-            var crystals = new Array ("Power Crystal","Wisdom Crystal","DEX Crystal","LUK Crystal","Dark Crystal");
+            var crystals = new Array ("力量水晶","智慧水晶","敏捷水晶","幸运水晶","黑暗水晶");
             for (var i = 0; i < crystals.length; i++){
                 selStr += "\r\n#L" + i + "# " + crystals[i] + "#l";
             }

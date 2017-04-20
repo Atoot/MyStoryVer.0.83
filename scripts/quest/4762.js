@@ -18,7 +18,7 @@ function start(mode, type, selection) {
 			}
 		} else if (status == 1) { //奖励金币和枫叶
 		  if(qm.canHold(4001126)){
-			qm.sendOk("恭喜你获得系统奖励！\r\n\r\n#fUI/UIWindow.img/QuestIcon/4/0#\r\n100000金币\r\n\r\n#v4001126# 200个");
+			qm.sendOk("恭喜你获得系统奖励！\r\n\r\n#fUI/UIWindow.img/QuestIcon/4/0#\r\n100000金币\r\n\r\n#fUI/UIWindow.img/QuestIcon/4/0#\r\n#v4001126# 200个");
 			qm.gainMeso(100000);
 			qm.gainItem(4001126, 200);
 			qm.forceCompleteQuest(4762);

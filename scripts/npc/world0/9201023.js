@@ -27,8 +27,9 @@ var status = -1;
 
 
 function start() {
-	cm.sendOk("Your skills have been added!");
-    action(1, 0, 0);
+	cm.sendOk("ÄãºÃÎÒÊÇÀ¬»ø!");
+	cm.dispose();
+    //action(1, 0, 0);
 }
 
 function action(mode, type, selection) {

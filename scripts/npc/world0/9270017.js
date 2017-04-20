@@ -1,7 +1,7 @@
 var status = 0;
 
 function start() {
-    cm.sendYesNo("The plane will be taking off soon, Will you leave now? You will have buy the plane ticket again to come in here.");
+    cm.sendYesNo("是否要回去？");
 }
 
 function action(mode, type, selection) {
@@ -13,7 +13,7 @@ function action(mode, type, selection) {
     }
     status++;
     if (status == 1) {
-        cm.sendNext("I have already told you the ticket is not refunable~ hope to see you again~");
+        cm.sendNext("88~");
     }else if(status == 2){
 		cm.warp(103000000);
 		cm.dispose();

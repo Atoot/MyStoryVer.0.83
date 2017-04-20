@@ -23,6 +23,9 @@ Author: kevintjuh93
 */ 
 
 function enter(pi) {
-    pi.warp(pi.getPlayer().getSavedLocation("MIRROR"));
+    var map = pi.getPlayer().getSavedLocation("MIRROR");
+    if(map == -1)
+		map = 102040000;
+    pi.warp(map,12);
     return true;
 }
