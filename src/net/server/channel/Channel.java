@@ -250,7 +250,7 @@ public final class Channel {
             wlock.unlock();
         }
         }
-
+    
     public int[] multiBuddyFind(int charIdFrom, int[] characterIds) {
         List<Integer> ret = new ArrayList<>(characterIds.length);
         PlayerStorage playerStorage = getPlayerStorage();
